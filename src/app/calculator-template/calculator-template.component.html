@@ -1,0 +1,24 @@
+
+<div class="calculator">
+  <h1> Calculator </h1>
+
+  <div class="operation-inputs">
+
+    <input type="text" placeholder="numero" [(ngModel)]="num1">
+    <input type="text" placeholder="numero" [(ngModel)]="num2">
+    <p>=</p>
+    <input id="result" type="text" placeholder="resultado" value= 0 [(ngModel)]="result" >
+
+  </div>
+
+  <div class="operation-buttons">
+
+    <button class="button-sum" (click)="sum()" >Somar</button>
+    <button class="button-times" (click)="times()" >Multiplicar</button>
+    <button class="button-division" (click)="division()" >Dividir</button>
+    <button class="button-subtraction" (click)="subtraction()">Subtração</button>
+
+  </div>
+
+
+</div>
